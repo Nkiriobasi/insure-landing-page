@@ -48,14 +48,28 @@ img{
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
+    line-height: 1.2;
+}
+
+.heading-text{
+    width: 100%;
+    font-family: var(--DM-serif-dispaly-font);
+    font-size: 4rem;
+    font-weight: 400;
     line-height: 1;
+    letter-spacing: 1px;
+}
+
+.line{
+    width: 7.5rem;
+    height: 1.25rem;
 }
 /* Utilities Ends */
 
 
 
 
-/* Navbar */
+/* Navigation */
 .navbar{
     width: 100%;
     height: 4.813rem;
@@ -125,7 +139,7 @@ img{
 .hamburger{
     display: none;  
 }
-/* Navbar Ends */
+/* Navigation Ends */
 
 
 
@@ -145,34 +159,31 @@ img{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    /* gap: 1rem; */
 }
 
-.flex-item{
+.insurance__flex-item{
     width: 100%;
     height: auto;
 }
 
-.item-wrap{
+.insurance__flex-item .line{
+    border-top: 1px solid var(--very-light-gray);
+}
+
+.insurance__item-wrap{
     width: inherit;
     height: inherit;
     padding-top: 4rem;
     padding-right: 2rem;
 }
 
-.img-wrap{
+.insurance__img-wrap{
     max-width: 100%;
     height: auto;
 }
 
-.heading-text{
-    width: 100%;
+.insurance .heading-text{
     height: 135px;
-    font-family: var(--DM-serif-dispaly-font);
-    font-size: 4rem;
-    font-weight: 400;
-    line-height: 1;
-    letter-spacing: 1px;
     margin-bottom: 1.5rem;
 }
 
@@ -198,23 +209,112 @@ img{
 
 
 
+/* Different */
+.different{
+    width: 100%;
+    height: auto;
+    padding: 18.75rem 1.25rem 5.625rem;
+}
+
+.different-content{
+    width: 100%;
+    height: auto;
+}
+
+.different-content .line{
+    border-top: 1px solid var(--Dark-grayish-violet);
+    margin-bottom: 1.75rem;
+}
+
+.different-content .heading-text{
+    margin-bottom: 4rem;
+}
+
+.different__flex-container{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.different__flex-item{
+    width: inherit;
+    height: inherit;
+}
+
+.different__item-wrap{
+    width: 90%;
+    height: inherit;
+}
+
+.icon-wrap{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2rem;
+}
+
+.bold-text{
+    width: 100%;
+    height: auto;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    font-family: var(--DM-serif-dispaly-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.semi-bold-text{
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: var(--Karla-font);
+    font-weight: 400;
+    color: var(--Dark-grayish-violet);
+}
+/* Different Ends */
+
+
 
 
 
 
 @media only screen and (max-width: 1200px){
+    /* Utilities */
     .heading-text{
-        height: 105px;
         font-size: 2.875rem;
-        line-height: 1;
-        margin-bottom: 1.5rem;
     }
+    /* Utilities Ends */
+
+    
+    /* Insurance */
+    .insurance .heading-text{
+        height: 6.25rem;
+    }
+    /* Insurance Ends */
+
+
+    /* Different */
+    .different{
+        padding: 15rem 1.25rem 5.625rem;
+    }
+    /* Different Ends */
 }
 
 
 
 @media only screen and (max-width: 768px){
-    /* hamburger */
+    /* Utilities */
+    .heading-text{
+        font-size: 2rem;
+    }
+    /* Utilities Ends */
+
+
+    /* Navigation */
     .hamburger{
         display: block;
         border: black solid 1px;
@@ -275,7 +375,7 @@ img{
     .showMenu {
         transform: translateY(0);
     }
-    /* hamburger Ends */
+    /* Navigation Ends */
 
 
     /* Insurance */
@@ -292,7 +392,11 @@ img{
         text-align: center;
     }
 
-    .item-wrap{
+    .insurance__flex-item .line{
+        display: none;
+    }
+
+    .insurance__item-wrap{
         width: inherit;
         height: inherit;
         padding-right: 1.75rem;
@@ -300,24 +404,24 @@ img{
         padding-bottom: 4rem;
     }
 
-    .heading-text{
+    .insurance .heading-text{
         font-size: 2rem;
-        height: 70px;
+        height: 4.375rem;
     }
+    /* Insurance Ends */
+}
 
-}/* Insurance Ends */
 
 
 @media only screen and (max-width: 425px){
-    .heading-text{
-        margin-bottom: 1.25rem;
-    }
-    
-    .p-text{
+    /* Insurance */
+    .insurance .heading-text{
         margin-bottom: 1.25rem;
     }
 
     .p-text{
         font-size: 0.875rem;
+        margin-bottom: 1.25rem;
     }
+    /* Insurance Ends */
 }
