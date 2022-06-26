@@ -179,6 +179,7 @@ img{
     background-image: url(./images/bg-pattern-intro-right-desktop.svg);
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 25%;
     color: var(--very-light-gray);
 }
 
@@ -247,6 +248,7 @@ img{
     background-image: url(./images/bg-pattern-intro-left-desktop.svg);
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: 10%;
 }
 
 .different-content{
