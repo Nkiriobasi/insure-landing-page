@@ -58,6 +58,7 @@ img{
     font-weight: 400;
     line-height: 1;
     letter-spacing: 1px;
+    color: inherit;
 }
 
 .line-wrap{
@@ -285,6 +286,49 @@ img{
 /* Different Ends */
 
 
+/* How-we-work */
+.how-we-work{
+    width: 100%;
+    height: auto;
+    padding: 3.75rem 1.25rem 5.625rem;
+}
+
+.hww-box{
+    width: 100%;
+    height: 250px;
+    background: var(--Dark-violet);
+    color: var(--very-light-gray);
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.hww-content{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+}
+
+.hww-wrap{
+    width: auto;
+    height: auto;
+}
+
+.hww-heading-text{
+    font-size: 2.875rem;
+}
+
+.hww-btn{
+    background: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+/* How-we-work Ends */
+
 
 
 
@@ -309,6 +353,13 @@ img{
         padding: 15rem 1.25rem 5.625rem;
     }
     /* Different Ends */
+
+
+    /* How-we-work */
+    .hww-heading-text{
+        font-size: 2rem;
+    }
+    /* How-we-work Ends */
 }
 
 
@@ -465,6 +516,29 @@ img{
         padding: 0 4rem;
     }
     /* Different Ends */
+
+
+    /* How-we-work */
+    .hww-box{
+        height: auto;
+    }
+
+    .hww-content{
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem 2rem;
+    }
+
+    .hww-wrap:first-child{
+        margin-bottom: 2rem;
+    }
+
+
+    .hww-heading-text{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    /* How-we-work Ends */
 }
 
 
@@ -495,4 +569,11 @@ img{
         padding: 0;
     }
     /* Different Ends */
+
+
+    /* How-we-work */
+    .hww-content{
+        padding: 2rem 1rem;
+    }
+    /* How-we-work Ends */
 }
