@@ -190,7 +190,7 @@ img{
     height: auto;
 }
 
-.insurance .heading-text{
+.insurance-heading-text{
     height: 135px;
     margin-bottom: 1.5rem;
 }
@@ -342,7 +342,7 @@ img{
 
     
     /* Insurance */
-    .insurance .heading-text{
+    .insurance-heading-text{
         height: 6.25rem;
     }
     /* Insurance Ends */
@@ -467,7 +467,7 @@ img{
         padding-bottom: 4rem;
     }
 
-    .insurance .heading-text{
+    .insurance-heading-text{
         font-size: 2rem;
         height: 4.375rem;
     }
@@ -545,7 +545,7 @@ img{
 
 @media only screen and (max-width: 425px){
     /* Insurance */
-    .insurance .heading-text{
+    .insurance-heading-text{
         margin-bottom: 1.25rem;
     }
 
