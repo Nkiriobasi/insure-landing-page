@@ -234,7 +234,7 @@ img{
     margin-bottom: 1.75rem;
 }
 
-.different-content .heading-text{
+.different-heading-text{
     margin-bottom: 4rem;
 }
 
@@ -484,7 +484,7 @@ img{
         align-items: center;
     }
 
-    .different-content .heading-text{
+    .different-heading-text{
         text-align: center;
     }
 
