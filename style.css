@@ -34,6 +34,11 @@ img{
     height: 100%;
 }
 
+.logo-wrap{
+    width: 112px;
+    height: 18px;
+}
+
 .container{
     max-width: 1092px;
     margin: 0 auto;
@@ -120,11 +125,6 @@ img{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo-wrap{
-    width: 112px;
-    height: 18px;
 }
 
 .menu{
@@ -357,6 +357,108 @@ img{
 /* How-we-work Ends */
 
 
+/* Footer Section */
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 1.25rem;
+    background: var(--very-light-gray);
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.footer-content{
+    width: 100%;
+    height: auto;
+}
+
+.footer-top-wrapper{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--Dark-grayish-violet);
+}
+
+.social-icons{
+    width: auto;
+    height: inherit;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.social-wrap{
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.social-wrap:nth-child(1){
+    margin-left: 0;
+}
+
+.social-link{
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+
+.footer-bottom-wrapper{
+    width: inherit;
+    height: inherit;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bottom-section{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: var(--Karla-font);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bottom-head-text{
+    width: inherit;
+    height: inherit;
+    margin-bottom: 1.5rem;
+    color: var(--Dark-grayish-violet);
+}
+
+.bottom-text{
+    width: inherit;
+    height: inherit;
+    margin-bottom: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Dark-violet);
+}.bottom-text:hover{
+    text-decoration: underline;
+}
+
+.bottom-text:last-child{
+    margin-bottom: 0;
+}
+/* Footer Ends */
+
+
+
 
 
 
@@ -388,6 +490,7 @@ img{
     }
     /* How-we-work Ends */
 }
+
 
 
 
@@ -471,7 +574,6 @@ img{
     }.menuItem:hover{
         color: var(--Dark-grayish-violet);
     }
-
 
     .showMenu {
         transform: translateY(0);
@@ -577,7 +679,51 @@ img{
         text-align: center;
     }
     /* How-we-work Ends */
+
+
+    
 }
+
+
+@media only screen and (max-width: 600px){
+    /* Utilities */
+    .logo-wrap{
+        width: 90px;
+        height: 14px;
+    }
+    /* Utilities Ends */
+
+
+    /* Footer */
+    .social-wrap{
+        width: 17px;
+        height: 17px;
+    }
+
+    .footer-bottom-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom-section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .bottom-head-text{
+        margin-bottom: 1.125rem;
+    }
+
+
+    .bottom-text:last-child{
+        margin-bottom: 2.25rem;
+    }
+    /* Footer Ends */
+}
+
 
 
 
@@ -614,4 +760,22 @@ img{
         padding: 2rem 1rem;
     }
     /* How-we-work Ends */
+
+
+    /* Footer */
+    .footer-top-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons{
+        width: auto;
+        height: inherit;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    /* Footer Ends */
 }
