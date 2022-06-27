@@ -97,6 +97,11 @@ img{
 .line{
     width: 7.5rem;
 }
+
+.section{
+    width: 100%;
+    height: auto;
+}
 /* Utilities Ends */
 
 
@@ -170,8 +175,6 @@ img{
 
 /* Insurance */
 .insurance{
-    width: 100%;
-    height: auto;
     padding: 11.25rem 1.25rem 3rem;
     background: var(--Dark-violet);
     background-image: url(./images/bg-pattern-intro-right-desktop.svg);
@@ -244,8 +247,6 @@ img{
 
 /* Different */
 .different{
-    width: 100%;
-    height: auto;
     padding: 17.5rem 1.25rem 5.625rem;
     background-image: url(./images/bg-pattern-intro-left-desktop.svg);
     background-repeat: no-repeat;
@@ -317,8 +318,6 @@ img{
 
 /* How-we-work */
 .how-we-work{
-    width: 100%;
-    height: auto;
     padding: 3.75rem 1.25rem 5.625rem;
 }
 
@@ -361,8 +360,6 @@ img{
 
 /* Footer Section */
 .footer{
-    width: 100%;
-    height: auto;
     padding: 2.5rem 1.25rem;
     background: var(--very-light-gray);
     background-image: url(./images/bg-pattern-footer-desktop.svg);
