@@ -283,8 +283,12 @@ img{
 }
 
 .different__item-wrap{
-    width: 90%;
+    width: inherit;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .icon-wrap{
@@ -312,6 +316,8 @@ img{
     font-family: var(--Karla-font);
     font-weight: 400;
     color: var(--Dark-grayish-violet);
+    /* border: 1px solid red; */
+    padding-right: 2rem;
 }
 /* Different Ends */
 
@@ -635,11 +641,7 @@ img{
     }
 
     .different__item-wrap{
-        width: 100%;
-        height: inherit;
         text-align: center;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     } 
